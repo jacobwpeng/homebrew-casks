@@ -1,25 +1,17 @@
-# jacobwpeng/cursor-cli
+# jacobwpeng/homebrew-casks
 
-Linux Homebrew cask for [Cursor CLI](https://cursor.com/). It installs and upgrades `cursor-agent`, following the macOS [`cursor-cli`](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/c/cursor-cli.rb) cask.
-
-The official Homebrew cask is macOS-only. This tap downloads the Linux `agent-cli-package` for x86_64 and arm64.
+Linux casks. `cursor-cli` installs `cursor-agent` from the same version as the macOS [cursor-cli cask](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/c/cursor-cli.rb).
 
 ## Install
 
 ```bash
-brew install --cask jacobwpeng/cursor-cli/cursor-cli
+brew install --cask jacobwpeng/homebrew-casks/cursor-cli
 ```
 
 ## Upgrade
 
 ```bash
-brew upgrade --cask jacobwpeng/cursor-cli/cursor-cli
+brew upgrade --cask jacobwpeng/homebrew-casks/cursor-cli
 ```
 
-Or tap it first:
-
-```bash
-brew tap jacobwpeng/cursor-cli
-brew install --cask cursor-cli
-brew upgrade --cask cursor-cli
-```
+A GitHub Action checks the macOS cask every 6 hours. When its version changes, the action downloads the Linux x64 and arm64 packages, updates the checksums, and pushes the cask.

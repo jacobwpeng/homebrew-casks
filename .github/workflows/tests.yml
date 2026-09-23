@@ -18,5 +18,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: brew style --cask jacobwpeng/cursor-cli
-      - run: brew audit --cask jacobwpeng/cursor-cli
+      - run: brew style --cask jacobwpeng/homebrew-casks
+      - run: brew audit --cask jacobwpeng/homebrew-casks/cursor-cli
