@@ -1,18 +1,25 @@
-# Jacobwpeng Cursor-cli
+# jacobwpeng/cursor-cli
 
-## How do I install these formulae?
+Linux Homebrew cask for [Cursor CLI](https://cursor.com/). It installs and upgrades `cursor-agent`, following the macOS [`cursor-cli`](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/c/cursor-cli.rb) cask.
 
-`brew install jacobwpeng/cursor-cli/<formula>`
+The official Homebrew cask is macOS-only. This tap downloads the Linux `agent-cli-package` for x86_64 and arm64.
 
-Or `brew tap jacobwpeng/cursor-cli` and then `brew install <formula>`.
+## Install
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "jacobwpeng/cursor-cli"
-brew "<formula>"
+```bash
+brew install --cask jacobwpeng/cursor-cli/cursor-cli
 ```
 
-## Documentation
+## Upgrade
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew upgrade --cask jacobwpeng/cursor-cli/cursor-cli
+```
+
+Or tap it first:
+
+```bash
+brew tap jacobwpeng/cursor-cli
+brew install --cask cursor-cli
+brew upgrade --cask cursor-cli
+```
