@@ -1,9 +1,9 @@
 cask "cursor-cli" do
   arch arm: "arm64", intel: "x64"
 
-  version "2026.09.26-dd393fe"
-  sha256 arm64_linux:  "ab1178d0d8c10b254e7e427d1d673533a389338424e75034be9ab9da02845bde",
-         x86_64_linux: "8085fd120f5c71f4eae7fea26a043718e5644e3071e4fab3220a0e58c51f9593"
+  version "2026.09.28-64d2043"
+  sha256 arm64_linux:  "c737599b27d3d8d6743c72b487204e335f3a8ea2fdbaf18302ee207a646ffd8d",
+         x86_64_linux: "6e4cd936a4866b8a77c50ff51a564460d715772fabc477a01aa0f0455d9559f0"
 
   url "https://downloads.cursor.com/lab/#{version}/linux/#{arch}/agent-cli-package.tar.gz"
   name "Cursor CLI"
